@@ -1,0 +1,286 @@
+.beaverphone-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, #020202, #050505 55%, #000 100%);
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+}
+
+.beaverphone {
+  width: min(1120px, 100%);
+  background: rgba(8, 8, 8, 0.95);
+  border-radius: 28px;
+  border: 1px solid rgba(248, 148, 34, 0.2);
+  box-shadow: 0 40px 120px -60px rgba(248, 148, 34, 0.65);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bp-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.menu-return {
+  color: #f89422;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.menu-return:hover,
+.menu-return:focus-visible {
+  text-decoration: underline;
+}
+
+.eyebrow {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.status-pill {
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(248, 148, 34, 0.15);
+  color: #f89422;
+  border: 1px solid rgba(248, 148, 34, 0.5);
+}
+
+.bp-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.dialpad-panel,
+.extensions {
+  background: rgba(10, 10, 10, 0.85);
+  border-radius: 24px;
+  padding: 2rem;
+  border: 1px solid rgba(248, 148, 34, 0.1);
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.panel-subtitle {
+  margin-top: 0.35rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.95rem;
+}
+
+.composer {
+  display: grid;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.composer label {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.composer input {
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(248, 148, 34, 0.4);
+  border-radius: 16px;
+  padding: 0.85rem 1.1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
+.composer input:focus {
+  outline: none;
+  border-color: #f89422;
+  box-shadow: 0 0 0 2px rgba(248, 148, 34, 0.25);
+}
+
+.composer-helper {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dialpad-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.dialpad-key {
+  background: rgba(15, 15, 15, 0.85);
+  border: 1px solid rgba(248, 148, 34, 0.3);
+  border-radius: 16px;
+  padding: 1.25rem 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.dialpad-key:hover,
+.dialpad-key:focus-visible {
+  transform: translateY(-2px);
+  border-color: #f89422;
+}
+
+.dialpad-key small {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dialpad-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dialpad-actions.secondary {
+  margin-top: 1rem;
+}
+
+.pill-btn {
+  background: rgba(248, 148, 34, 0.12);
+  border: 1px solid rgba(248, 148, 34, 0.4);
+  color: #f5f5f5;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-btn[data-active="true"],
+.pill-btn:hover,
+.pill-btn:focus-visible {
+  background: rgba(248, 148, 34, 0.2);
+  border-color: #f89422;
+  transform: translateY(-2px);
+}
+
+.pill-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.call-btn[data-active="true"] {
+  background: rgba(192, 53, 53, 0.2);
+  border-color: rgba(255, 94, 94, 0.8);
+}
+
+.status-message {
+  margin-top: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+.extensions {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.extension-list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.extension-card {
+  width: 100%;
+  border: 1px solid rgba(248, 148, 34, 0.25);
+  border-radius: 18px;
+  background: rgba(12, 12, 12, 0.9);
+  padding: 1rem 1.25rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+  align-items: center;
+  color: inherit;
+  text-align: left;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.extension-card:hover,
+.extension-card:focus-visible {
+  border-color: #f89422;
+  transform: translateY(-2px);
+}
+
+.extension-card img,
+.extension-fallback {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(248, 148, 34, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: #f89422;
+}
+
+.extension-card strong {
+  display: block;
+  font-size: 1rem;
+}
+
+.extension-card span {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.extension-card .details {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.extension {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f89422;
+}
+
+@media (max-width: 768px) {
+  .beaverphone {
+    padding: 1.75rem;
+  }
+
+  .dialpad-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
