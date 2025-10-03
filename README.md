@@ -216,3 +216,7 @@ console.warn("[BeaverPhone] WS not ready");
 5. Click on **BeaverNet.ca** → load your normal cloud site.
 
 ---
+ wscat -c ws://192.168.1.60:5001
+Connected (press CTRL+C to quit)
+> { "type": "dial", "number": "+1411" }
+< {"type":"ack","action":"dial","number":"+1411","status":"accepted"}
